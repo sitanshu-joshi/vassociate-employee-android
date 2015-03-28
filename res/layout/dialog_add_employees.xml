@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fragment_create_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_centerInParent="true"
+        android:background="#A1066B"
+        android:gravity="center"
+        android:text="@string/add_employee"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_25" />
+
+    <ScrollView
+        android:id="@+id/fragment_add_employees_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_20"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10" >
+
+            <EditText
+                android:id="@+id/dialog_add_employees_edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/bg_row_item"
+                android:hint="Name"
+                android:padding="@dimen/pading_10" />
+
+            <EditText
+                android:id="@+id/dialog_add_employees_edittext_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/bg_row_item"
+                android:hint="Username"
+                android:padding="@dimen/pading_10" />
+
+            <EditText
+                android:id="@+id/dialog_add_employees_edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/bg_row_item"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/pading_10" />
+
+            <EditText
+                android:id="@+id/dialog_add_employees_edittext_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/bg_row_item"
+                android:hint="Email"
+                android:padding="@dimen/pading_10" />
+
+            <EditText
+                android:id="@+id/dialog_add_employees_edittext_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/bg_row_item"
+                android:hint="Contact"
+                android:inputType="number"
+                android:padding="@dimen/pading_10" />
+
+            <EditText
+                android:id="@+id/dialog_add_employees_edittext_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/bg_row_item"
+                android:hint="Designation"
+                android:padding="@dimen/pading_10" />
+
+            <LinearLayout
+                android:id="@+id/dialog_add_task_spinner_employee_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/bg_row_item"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_10" >
+
+                <TextView
+                    android:id="@+id/dialog_add_task_spinner_employee_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:text="Select type of employee"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/font_20" />
+
+                <Spinner
+                    android:id="@+id/dialog_add_employees_spinner_type_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pading_10" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/dialog_add_employees_edittext_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/bg_row_item"
+                android:hint="User Role"
+                android:padding="@dimen/pading_10"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/dialog_add_employees_btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/pading_20"
+                android:background="@drawable/bg_red_button"
+                android:paddingLeft="@dimen/pading_25"
+                android:paddingRight="@dimen/pading_25"
+                android:singleLine="true"
+                android:text="Add"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/fragment_add_employees_details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:padding="@dimen/pading_10"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_20" />
+
+</LinearLayout>

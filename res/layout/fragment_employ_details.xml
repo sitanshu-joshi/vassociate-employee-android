@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/fragment_employee_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#A1066B"
+        android:gravity="center"
+        android:text="@string/employee_details"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_25" />
+
+    <ImageView
+        android:id="@+id/fragment_employee_details_imageview_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_employee_details_title"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_add" />
+
+    <ListView
+        android:id="@+id/fragment_employee_details_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_employee_details_imageview_add"
+        android:layout_margin="@dimen/pading_10"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_row_item"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/row_employee_details_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/pading_10"
+        android:layout_toLeftOf="@+id/row_employee_details_imageview_edit"
+        android:layout_weight="0.6"
+        android:singleLine="true"
+        android:text="Employee 1" />
+
+    <ImageView
+        android:id="@+id/row_employee_details_imageview_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_toLeftOf="@+id/row_employee_details_imageview_delete"
+        android:layout_weight="0.2"
+        android:contentDescription="@null"
+        android:padding="@dimen/pading_10"
+        android:src="@drawable/ic_action_edit" />
+
+    <ImageView
+        android:id="@+id/row_employee_details_imageview_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.2"
+        android:contentDescription="@null"
+        android:padding="@dimen/pading_10"
+        android:src="@drawable/ic_delete" />
+
+</LinearLayout>

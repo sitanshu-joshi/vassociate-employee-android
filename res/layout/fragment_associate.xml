@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/fragment_associate_title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#A1066B"
+        android:gravity="center"
+        android:text="@string/v_associate"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_25" />
+
+    <GridView
+        android:id="@+id/fragment_associate_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_associate_btn_logout"
+        android:layout_below="@+id/fragment_associate_title"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:scrollbars="none" >
+    </GridView>
+
+    <Button
+        android:id="@+id/fragment_associate_btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/pading_10"
+        android:layout_marginTop="@dimen/pading_10"
+        android:background="@drawable/bg_red_button"
+        android:paddingLeft="@dimen/pading_25"
+        android:paddingRight="@dimen/pading_25"
+        android:singleLine="true"
+        android:text="Logout"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

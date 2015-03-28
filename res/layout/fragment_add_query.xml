@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#A1066B" >
+
+        <TextView
+            android:id="@+id/fragment_create_query_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/add_query"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_25" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <ImageView
+                android:id="@+id/fragment_add_query_img_query_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="@null"
+                android:padding="@dimen/pading_10"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/fragment_add_query_edittext_client_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_row_item"
+                android:hint="Client Name"
+                android:padding="@dimen/pading_10"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/fragment_add_query_edittext_client_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/bg_row_item"
+                android:hint="Client Address"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:padding="@dimen/pading_10"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/fragment_add_query_edittext_client_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/bg_row_item"
+                android:hint="Client Phone"
+                android:inputType="number"
+                android:padding="@dimen/pading_10"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/fragment_add_query_btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pading_10"
+                android:singleLine="true"
+                android:text="Add" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

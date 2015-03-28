@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_row_item"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/row_employee_details_imageview_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:contentDescription="@null"
+        android:padding="@dimen/pading_10"
+        android:src="@drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/row_employee_details_imageview_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/row_employee_details_imageview_delete"
+        android:contentDescription="@null"
+        android:padding="@dimen/pading_10"
+        android:src="@drawable/ic_action_edit" />
+
+    <TextView
+        android:id="@+id/row_employee_details_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/pading_10"
+        android:layout_toLeftOf="@+id/row_employee_details_imageview_edit"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Employee 1" />
+
+</RelativeLayout>
